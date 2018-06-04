@@ -8,7 +8,7 @@
 <channel>
 	<title>Comments for Tucker &amp; Roxanne</title>
 	<atom:link href="http://localhost/wedding-website/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://https://tuckerandroxannesspectacularwedding.github.io</link>
+	<link>https://tuckerandroxannesspectacularwedding.github.io</link>
 	<description>november 4th 2018 @ campbellsville kentucky</description>
 	<lastBuildDate>Wed, 09 May 2018 19:53:45 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -16,10 +16,10 @@
 	<generator>https://wordpress.org/?v=4.9.6</generator>
 	<item>
 		<title>Comment on Hello world! by A WordPress Commenter</title>
-		<link>https://https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/#comment-1</link>
+		<link>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/#comment-1</link>
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Wed, 09 May 2018 19:53:45 +0000</pubDate>
-		<guid isPermaLink="false">https://https://tuckerandroxannesspectacularwedding.github.io/?p=1#comment-1</guid>
+		<guid isPermaLink="false">https://tuckerandroxannesspectacularwedding.github.io/?p=1#comment-1</guid>
 		<description><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
 Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot;&gt;Gravatar&lt;/a&gt;.]]></description>

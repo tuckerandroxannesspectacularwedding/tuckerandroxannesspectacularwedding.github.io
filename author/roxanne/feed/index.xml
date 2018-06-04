@@ -10,7 +10,7 @@
 <channel>
 	<title>roxanne &#8211; Tucker &amp; Roxanne</title>
 	<atom:link href="http://localhost/wedding-website/author/roxanne/feed/" rel="self" type="application/rss+xml" />
-	<link>https://https://tuckerandroxannesspectacularwedding.github.io</link>
+	<link>https://tuckerandroxannesspectacularwedding.github.io</link>
 	<description>november 4th 2018 @ campbellsville kentucky</description>
 	<lastBuildDate>Wed, 09 May 2018 21:04:02 +0000</lastBuildDate>
 	<language>en-CA</language>
@@ -19,17 +19,17 @@
 	<generator>https://wordpress.org/?v=4.9.6</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>https://https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/</link>
-		<comments>https://https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/#comments</comments>
+		<link>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/</link>
+		<comments>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/#comments</comments>
 		<pubDate>Wed, 09 May 2018 19:53:45 +0000</pubDate>
 		<dc:creator><![CDATA[roxanne]]></dc:creator>
 				<category><![CDATA[Uncategorised]]></category>
 
-		<guid isPermaLink="false">https://https://tuckerandroxannesspectacularwedding.github.io/?p=1</guid>
+		<guid isPermaLink="false">https://tuckerandroxannesspectacularwedding.github.io/?p=1</guid>
 		<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 				<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/feed/</wfw:commentRss>
+			<wfw:commentRss>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/feed/</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 		</item>
 	</channel>
