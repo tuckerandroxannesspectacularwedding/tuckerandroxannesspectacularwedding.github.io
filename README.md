@@ -1,2 +1,2 @@
 # tuckerandroxannesspectacularwedding.github.io
-home for our wedding website
+home sweet home for our wedding website
