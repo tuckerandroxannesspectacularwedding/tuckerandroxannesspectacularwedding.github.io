@@ -2,3 +2,50 @@
 Theme Name: Twenty Seventeen Child
 Template: twentyseventeen
 */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+:root {
+    --white: #fefefe
+}
+
+.entry-header {
+    display: none;
+}
+
+.entry-content {
+    width: fit-content !important;
+    float: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #404041!important;
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 200!important;
+    font-size: 13px!important;
+    line-height: 2!important;
+}
+
+.has-header-image .custom-header-media img {
+    object-fit: contain;
+    margin-top: -50px;
+}
+
+.custom-header-media:before {
+    display: none!important;
+}
+
+.navigation-top {
+    background-color: rgba(0, 0, 0, 0)!important;
+    border: 0!important;
+}
+
+.navigation-top a {
+    color: white!important;
+    text-transform: uppercase;
+    font-weight: 400!important;
+    letter-spacing: 4px;
+}

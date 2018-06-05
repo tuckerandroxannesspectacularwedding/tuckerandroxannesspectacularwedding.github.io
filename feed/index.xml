@@ -8,15 +8,23 @@
 	>
 
 <channel>
-	<title>Tucker &amp; Roxanne</title>
+	<title>tucker + roxanne</title>
 	<atom:link href="http://localhost/wedding-website/feed/" rel="self" type="application/rss+xml" />
 	<link>https://tuckerandroxannesspectacularwedding.github.io</link>
-	<description>november 4th 2018 @ campbellsville kentucky</description>
-	<lastBuildDate>Mon, 04 Jun 2018 23:54:55 +0000</lastBuildDate>
+	<description>11/4/2018</description>
+	<lastBuildDate>Tue, 05 Jun 2018 02:50:40 +0000</lastBuildDate>
 	<language>en-CA</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.6</generator>
+
+<image>
+	<url>https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/cropped-red-heart-painted-in-watercolor-32x32.png</url>
+	<title>tucker + roxanne</title>
+	<link>https://tuckerandroxannesspectacularwedding.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 	<item>
 		<title>Hello world!</title>
 		<link>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/</link>
