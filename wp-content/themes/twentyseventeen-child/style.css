@@ -13,7 +13,7 @@ Template: twentyseventeen
 }
 
 .entry-content {
-    width: fit-content !important;
+    width: 100%!important;
     float: none;
 }
 
@@ -48,4 +48,13 @@ textarea {
     text-transform: uppercase;
     font-weight: 400!important;
     letter-spacing: 4px;
+}
+
+article#panel2 {
+    background-color: #e3e9e3!important;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
 }
