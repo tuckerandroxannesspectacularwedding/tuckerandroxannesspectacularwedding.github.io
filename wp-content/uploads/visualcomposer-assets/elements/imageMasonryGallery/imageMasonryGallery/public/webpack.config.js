@@ -3,6 +3,6 @@ module.exports = {
     'photoswipe-init': [ './js/lib/photoswipe/photoswipe-init.js' ]
   },
   output: {
-    filename: "dist/[name].min.js"
+    filename: 'dist/[name].min.js'
   }
 }
