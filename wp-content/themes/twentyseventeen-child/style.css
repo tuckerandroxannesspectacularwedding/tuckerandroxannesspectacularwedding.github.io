@@ -22,11 +22,15 @@ button:hover {
     color: black !important;
 }
 
+h2 {
+    font-weight: 100 !important;
+}
+
 a.vce-single-image-inner {
     box-shadow: none !important;
 }
 
-img.vce-single-image#logo {
+#logo img.vce-single-image {
     max-height: 140px !important;
     max-width: 200px !important;
     padding-top: 50px
@@ -41,8 +45,6 @@ section.vce-hero-section-container.vce-hero-section-media--xs.vce-hero-section-m
 p#cursive {
     font-size: 2em;
 }
-
-
 
 .rsvp-bg {
     height: 100%;
@@ -164,18 +166,88 @@ p {
     width: 100vw;
     height: auto;
     z-index: 100;
-    top: 50px;
+    top: 230px;
     text-align: center !important;
 }
 
-#rsvp-modal {
-    position: absolute;
+.modal-wrapper {
     background-color: white;
-    padding: 30px;
+    padding: 10px 40px;
     box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+    max-width: 800px;
+    margin: 90px auto;
+    border-radius: 10px;
+    height: 550px;
+    position: relative;
+}
+
+.mc-field-group input {
+    background: whitesmoke !important;
+}
+
+.modal-wrapper > .left {
+    width: 55%;
+    padding-right: 5%;
+    text-align: center;
+    float: left;
+}
+
+.modal-wrapper > .right {
+    float: right;
+    width: 40%;
+}
+
+div#close-modal {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    top: 15px;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    opacity: .5;
+}
+
+input#mc-embedded-subscribe {
+    margin-top: 10px;
+    transition: opacity .5s;
+}
+
+input#mc-embedded-subscribe:hover {
+    opacity: .5;
+}
+
+.fullsize {
+    width: fit-content;
+    background-color: white;
+    height: fit-content;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+}
+
+#rsvp-modal {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
     display: none;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
 
 @media screen and (max-width: 767px) {
     .nav-before a {
@@ -193,4 +265,22 @@ p {
     .banner-img {
         display: none;
     }
+
+    .modal-wrapper {
+        max-width: 100%;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        overflow-y: scroll;
+    }
+    .modal-wrapper > .right {
+        width: 100%;
+    }
+    .modal-wrapper > .left {
+        width: 100%;
+    }
+
+
+
 }
