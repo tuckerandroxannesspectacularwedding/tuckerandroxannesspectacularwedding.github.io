@@ -263,7 +263,8 @@ input#mc-embedded-subscribe:hover {
         padding: unset;
     }
     .banner-img {
-        display: none;
+        left: 0;
+        margin-top: 100px;
     }
 
     .modal-wrapper {
@@ -276,10 +277,13 @@ input#mc-embedded-subscribe:hover {
     }
     .modal-wrapper > .right {
         width: 100%;
+        min-height: 400px;
     }
     .modal-wrapper > .left {
         width: 100%;
     }
+
+
 
 
 
