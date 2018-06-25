@@ -277,7 +277,7 @@ input#mc-embedded-subscribe:hover {
     }
     .modal-wrapper > .right {
         width: 100%;
-        min-height: 400px;
+        min-height: 1000px;
     }
     .modal-wrapper > .left {
         width: 100%;
