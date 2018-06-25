@@ -245,9 +245,7 @@ input#mc-embedded-subscribe:hover {
     display: none;
 }
 
-.disable-scroll {
-    overflow: hidden;
-}
+
 
 @media screen and (max-width: 767px) {
     .nav-before a {
@@ -277,14 +275,18 @@ input#mc-embedded-subscribe:hover {
     }
     .modal-wrapper > .right {
         width: 100%;
-        min-height: 1000px;
     }
     .modal-wrapper > .left {
         width: 100%;
     }
 
 
-
+    html,
+    body {
+        -webkit-overflow-scrolling: touch !important;
+        overflow: auto !important;
+        height: 100% !important;
+    }
 
 
 }
