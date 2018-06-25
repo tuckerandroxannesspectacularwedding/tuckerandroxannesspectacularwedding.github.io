@@ -280,13 +280,4 @@ input#mc-embedded-subscribe:hover {
         width: 100%;
     }
 
-
-    html,
-    body {
-        -webkit-overflow-scrolling: touch !important;
-        overflow: auto !important;
-        height: 100% !important;
-    }
-
-
 }
