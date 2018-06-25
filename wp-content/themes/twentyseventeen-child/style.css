@@ -45,25 +45,24 @@ p#cursive {
 
 /*
 .rsvp-bg {
-    /* The image used
     background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/IMG_4925.jpg);
-    /* Full height
     height: 100%;
-    /* Create the parallax scrolling effect 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}*/
+}
+*/
+
+.rsvp-bg {
+    height: 100%;
+}
 
 
 /*
 .rsvp-bg {
-    /* Needed for children to be absolutely positioned relative to the parent. 
     position: relative;
-    /* The height of the container. Must be set, but it doesn't really matter what the value is. 
     height: 100vh;
-    /* For text formatting. 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,28 +70,30 @@ p#cursive {
     text-shadow: 0 0 5px #000;
 }
 
+*/
+
 .rsvp-bg::after {
-    /* Display and position the pseudo-element 
     content: " ";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. 
     transform: translateZ(-1px) scale(1.5);
-    /* Force the background image to fill the whole element. 
     background-size: 100%;
-    /* Keep the image from overlapping sibling elements. 
     z-index: -1;
 }
 
 .rsvp-bg::after {
-    background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/IMG_4925.jpg);
+    background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/ring-header.jpg)!important;
 }
-*/
+
+article#panel1 {
+    background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/ring-header.jpg);
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+}
 
 a.vce-single-image-inner:hover {
     opacity: .5;
@@ -142,11 +143,28 @@ article#panel4 {
     border: 0!important;
 }
 
+.nav-alt {
+    background-color: white!important;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.2);
+}
+
+.nav-alt a {
+    color: black!important;
+}
+
 .navigation-top a {
-    color: white!important;
+    color: inherit!important;
     text-transform: uppercase;
     font-weight: 400!important;
     letter-spacing: 4px;
+}
+
+.nav-before a {
+    color: white!important;
+}
+
+footer {
+    display: none!important;
 }
 
 article#panel2 {
@@ -160,4 +178,20 @@ p {
 
 .site-content-contain {
     background-color: transparent;
+}
+
+.vce-hero-section--content {
+    width: 90%!important;
+}
+
+@media screen and (max-width: 1120px) {
+    article#panel1 {
+        background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/ring-med.jpg);
+    }
+}
+
+@media screen and (max-width: 825px) {
+    article#panel1 {
+        background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/IMG_4925.jpg);
+    }
 }
