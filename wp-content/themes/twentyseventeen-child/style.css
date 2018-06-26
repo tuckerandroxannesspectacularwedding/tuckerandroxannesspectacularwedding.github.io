@@ -110,6 +110,7 @@ article#panel4 {
 .navigation-top {
     background-color: rgba(0, 0, 0, 0) !important;
     border: 0 !important;
+    z-index: 10;
 }
 
 .nav-alt {
@@ -165,9 +166,13 @@ p {
     position: absolute;
     width: 100vw;
     height: auto;
-    z-index: 100;
+    z-index: auto;
     top: 230px;
     text-align: center !important;
+}
+
+.site-content-contain {
+    z-index: 10;
 }
 
 .modal-wrapper {
@@ -284,7 +289,7 @@ input#mc-embedded-subscribe:hover {
     }
 
     .banner-img {
-        margin-top: 100px;
+        margin-top: 75px;
     }
 
 
