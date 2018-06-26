@@ -185,6 +185,10 @@ p {
     background: whitesmoke !important;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
+
 .modal-wrapper > .left {
     width: 55%;
     padding-right: 5%;
@@ -219,23 +223,15 @@ input#mc-embedded-subscribe:hover {
     opacity: .5;
 }
 
-.fullsize {
-    width: fit-content;
-    background-color: white;
-    height: fit-content;
-    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -ms-animation: fadein 1s;
-    -o-animation: fadein 1s;
-    animation: fadein 1s;
-}
 
 #rsvp-modal {
-    position: absolute;
+    display: none;
+    position: fixed !important;
+}
+
+
+.modal {
+    position: fixed;
     z-index: 99999;
     top: 0;
     left: 0;
@@ -264,6 +260,14 @@ input#mc-embedded-subscribe:hover {
         left: 0;
         margin-top: 100px;
     }
+
+    #rsvp-modal {
+        display: none;
+        height: 200vh;
+        width: 100vw;
+        top: 0 !important;
+    }
+
 
     .modal-wrapper {
         max-width: 100%;

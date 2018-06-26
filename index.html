@@ -259,7 +259,7 @@ Tucker and Roxanne met on the first day of orientation at the University; howeve
 
 			<div class="entry-content">
 				<div class="vce-row-container"><div class="vce-row vce-row--has-col-background vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-8a5cc764" data-vce-do-apply="all el-8a5cc764"><div class="vce-row-content" data-vce-element-content="true"><div class="vce-col vce-element--has-background vce-col--md-auto vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-d206aa5c" data-vce-do-apply="background border el-d206aa5c"><div class="vce-content-background-container"><div class="vce-asset-background-simple-container vce-visible-all-only vce-asset-background-simple--style-cover vce-asset-background-simple--position-center-center"><div class="vce-asset-background-simple"><div class="vce-asset-background-simple-item" style="background-image: url('https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/IMG_4409.jpg');"></div></div></div></div><div class="vce-col-inner" data-vce-element-content="true" data-vce-do-apply="padding margin  el-d206aa5c"><div class="vce-text-block is-white"><div class="vce-text-block-wrapper vce" id="el-5da0d661" data-vce-do-apply="all el-5da0d661"><h2 style="text-align: center;" id="cursive">See you there!</h2>
-<p style="text-align: center;">We can’t wait to see all of our beloved friends and relatives at the wedding. If, by chance, you are prevented from coming, please let us know in advance.</p></div></div><div class="vce-button--style-outline-container rsvp vce-button--style-outline-container--align-center"><span class="vce-button--style-outline-wrapper vce" id="el-b6bad4f8" data-vce-do-apply="margin el-b6bad4f8"><button class="vce-button--style-outline-animated vce-button--style-outline--border-square vce-button--style-outline--size-medium vce-button--style-outline-animated--color-b-255-255-255--fff--3d3d3d vce-button--style-outline-animated--border-color-e3e3e3--3d3d3d vce-button--style-outline-animated--background-color-b-255-245-245" data-vce-do-apply="padding border background  el-b6bad4f8"><span class="vce-button--style-outline-text">RSVP</span></button></span></div></div></div></div></div></div>
+<p style="text-align: center;">We can’t wait to see all of our beloved friends and relatives at the wedding. If, by chance, you are prevented from coming, please let us know in advance.</p></div></div><div class="vce-button--style-outline-container vce-button--style-outline-container--align-center"><span class="vce-button--style-outline-wrapper vce" id="el-b6bad4f8" data-vce-do-apply="margin el-b6bad4f8"><button class="vce-button--style-outline-animated vce-button--style-outline--border-square vce-button--style-outline--size-medium vce-button--style-outline-animated--color-b-255-255-255--fff--3d3d3d vce-button--style-outline-animated--border-color-e3e3e3--3d3d3d vce-button--style-outline-animated--background-color-b-255-245-245" data-vce-do-apply="padding border background  el-b6bad4f8" id="rsvp-bottom"><span class="vce-button--style-outline-text">RSVP</span></button></span></div></div></div></div></div></div>
 			</div><!-- .entry-content -->
 
 			
@@ -297,38 +297,66 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
 <script type='text/javascript' src='https://tuckerandroxannesspectacularwedding.github.io/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2'></script>
 <script type='text/javascript' src='https://tuckerandroxannesspectacularwedding.github.io/wp-includes/js/wp-embed.min.js?ver=4.9.6'></script>
 <script id="vcv-46-global-js">
-    jQuery(function() {
+    jQuery(function () {
     var header = jQuery(".navigation-top");
-  jQuery(".banner-img").appendTo(".custom-header");
-      
-    jQuery(window).scroll(function() {    
+    jQuery(".banner-img").appendTo(".custom-header");
+    jQuery("#modal").prependTo("#page");
+
+    jQuery(window).scroll(function () {
         var scroll = jQuery(window).scrollTop();
-    		
+
         if (scroll >= 500) {
             header.addClass("nav-alt").removeClass("nav-before");
         } else {
             header.removeClass("nav-alt").addClass("nav-before");
         }
-      
-      var main = jQuery(".custom-header");
-      
-  		
-      jQuery(".rsvp-bg").prependTo("#panel1");
-      
-      jQuery("#rsvp-modal").appendTo("#page");
-      
-      jQuery("#rsvp-modal").addClass("modal").addClass("fullsize");
-        	
-      jQuery("#close-modal").click(function() {
-        	jQuery("#rsvp-modal").hide();
-        	jQuery("#page").addClass(".disable-scroll");
-      });
-      
-      jQuery( ".rsvp" ).click(function() {
-  				jQuery("#rsvp-modal").show();
-        jQuery("#page").removeClass(".disable-scroll");
-			});
-      
+
+        var main = jQuery(".custom-header");
+
+        var top_pos = jQuery("#panel1").offset().top;
+        var bottom_pos = jQuery("#panel4").offset().top;
+
+        jQuery(".rsvp-bg").prependTo("#panel1");
+
+        jQuery("#close-modal").click(function () {
+            jQuery("#rsvp-modal").hide();
+            jQuery("#modal").hide();
+            jQuery(".page").removeClass("disable-scroll");
+        });
+
+
+        jQuery(".rsvp").click(function () {
+          jQuery("#rsvp-modal").show();
+          jQuery("#modal").show();
+          jQuery(".page").addClass("disable-scroll");
+            if (jQuery(window).width() > 425) {
+                jQuery("#rsvp-modal").prependTo("#page");
+        				jQuery("#rsvp-modal").addClass("modal");
+            }
+            if (jQuery(window).width() < 425) {
+                
+                jQuery("#rsvp-modal").offset({
+                    top: top_pos
+                });
+                window.scrollTo(0, top_pos);
+            }
+        });
+
+        jQuery("#rsvp-bottom").click(function () {
+            jQuery("#rsvp-modal").show();
+          jQuery("#modal").show();
+          jQuery(".page").addClass("disable-scroll");
+            if (jQuery(window).width() > 425) {
+                jQuery("#rsvp-modal").prependTo("#page");
+        				jQuery("#rsvp-modal").addClass("modal");
+            }
+            if (jQuery(window).width() < 425) {
+                jQuery("#rsvp-modal").offset({
+                    top: bottom_pos
+                });
+                window.scrollTo(0, (bottom_pos));
+            }
+        });
     });
 });</script>
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

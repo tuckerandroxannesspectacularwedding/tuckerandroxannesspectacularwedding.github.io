@@ -146,10 +146,10 @@ Saturday &amp; Sunday: 11:00AM&ndash;3:00PM</p>
 		</section><section id="search-3" class="widget widget_search"><h2 class="widget-title">Search</h2>
 
 <form role="search" method="get" class="search-form" action="https://tuckerandroxannesspectacularwedding.github.io/">
-	<label for="search-form-5b3195742fbe2">
+	<label for="search-form-5b3246de5478b">
 		<span class="screen-reader-text">Search for:</span>
 	</label>
-	<input type="search" id="search-form-5b3195742fbe2" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	<input type="search" id="search-form-5b3246de5478b" class="search-field" placeholder="Search &hellip;" value="" name="s" />
 	<button type="submit" class="search-submit"><svg class="icon icon-search" aria-hidden="true" role="img"> <use href="#icon-search" xlink:href="#icon-search"></use> </svg><span class="screen-reader-text">Search</span></button>
 </form>
 </section><section id="text-7" class="widget widget_text"><h2 class="widget-title">About This Site</h2>			<div class="textwidget"><p>This may be a good place to introduce yourself and your site or include some credits.</p>
@@ -183,38 +183,66 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
 <script type='text/javascript' src='https://tuckerandroxannesspectacularwedding.github.io/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2'></script>
 <script type='text/javascript' src='https://tuckerandroxannesspectacularwedding.github.io/wp-includes/js/wp-embed.min.js?ver=4.9.6'></script>
 <script id="vcv-1-global-js">
-    jQuery(function() {
+    jQuery(function () {
     var header = jQuery(".navigation-top");
-  jQuery(".banner-img").appendTo(".custom-header");
-      
-    jQuery(window).scroll(function() {    
+    jQuery(".banner-img").appendTo(".custom-header");
+    jQuery("#modal").prependTo("#page");
+
+    jQuery(window).scroll(function () {
         var scroll = jQuery(window).scrollTop();
-    		
+
         if (scroll >= 500) {
             header.addClass("nav-alt").removeClass("nav-before");
         } else {
             header.removeClass("nav-alt").addClass("nav-before");
         }
-      
-      var main = jQuery(".custom-header");
-      
-  		
-      jQuery(".rsvp-bg").prependTo("#panel1");
-      
-      jQuery("#rsvp-modal").appendTo("#page");
-      
-      jQuery("#rsvp-modal").addClass("modal").addClass("fullsize");
-        	
-      jQuery("#close-modal").click(function() {
-        	jQuery("#rsvp-modal").hide();
-        	jQuery("#page").addClass(".disable-scroll");
-      });
-      
-      jQuery( ".rsvp" ).click(function() {
-  				jQuery("#rsvp-modal").show();
-        jQuery("#page").removeClass(".disable-scroll");
-			});
-      
+
+        var main = jQuery(".custom-header");
+
+        var top_pos = jQuery("#panel1").offset().top;
+        var bottom_pos = jQuery("#panel4").offset().top;
+
+        jQuery(".rsvp-bg").prependTo("#panel1");
+
+        jQuery("#close-modal").click(function () {
+            jQuery("#rsvp-modal").hide();
+            jQuery("#modal").hide();
+            jQuery(".page").removeClass("disable-scroll");
+        });
+
+
+        jQuery(".rsvp").click(function () {
+          jQuery("#rsvp-modal").show();
+          jQuery("#modal").show();
+          jQuery(".page").addClass("disable-scroll");
+            if (jQuery(window).width() > 425) {
+                jQuery("#rsvp-modal").prependTo("#page");
+        				jQuery("#rsvp-modal").addClass("modal");
+            }
+            if (jQuery(window).width() < 425) {
+                
+                jQuery("#rsvp-modal").offset({
+                    top: top_pos
+                });
+                window.scrollTo(0, top_pos);
+            }
+        });
+
+        jQuery("#rsvp-bottom").click(function () {
+            jQuery("#rsvp-modal").show();
+          jQuery("#modal").show();
+          jQuery(".page").addClass("disable-scroll");
+            if (jQuery(window).width() > 425) {
+                jQuery("#rsvp-modal").prependTo("#page");
+        				jQuery("#rsvp-modal").addClass("modal");
+            }
+            if (jQuery(window).width() < 425) {
+                jQuery("#rsvp-modal").offset({
+                    top: bottom_pos
+                });
+                window.scrollTo(0, (bottom_pos));
+            }
+        });
     });
 });</script>
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
