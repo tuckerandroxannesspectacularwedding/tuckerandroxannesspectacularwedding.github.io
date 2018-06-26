@@ -146,10 +146,10 @@ Saturday &amp; Sunday: 11:00AM&ndash;3:00PM</p>
 		</section><section id="search-3" class="widget widget_search"><h2 class="widget-title">Search</h2>
 
 <form role="search" method="get" class="search-form" action="https://tuckerandroxannesspectacularwedding.github.io/">
-	<label for="search-form-5b3246de5478b">
+	<label for="search-form-5b32653c2ce95">
 		<span class="screen-reader-text">Search for:</span>
 	</label>
-	<input type="search" id="search-form-5b3246de5478b" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	<input type="search" id="search-form-5b32653c2ce95" class="search-field" placeholder="Search &hellip;" value="" name="s" />
 	<button type="submit" class="search-submit"><svg class="icon icon-search" aria-hidden="true" role="img"> <use href="#icon-search" xlink:href="#icon-search"></use> </svg><span class="screen-reader-text">Search</span></button>
 </form>
 </section><section id="text-7" class="widget widget_text"><h2 class="widget-title">About This Site</h2>			<div class="textwidget"><p>This may be a good place to introduce yourself and your site or include some credits.</p>
@@ -187,7 +187,7 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
     var header = jQuery(".navigation-top");
     jQuery(".banner-img").appendTo(".custom-header");
     jQuery("#modal").prependTo("#page");
-
+ 	
     jQuery(window).scroll(function () {
         var scroll = jQuery(window).scrollTop();
 
@@ -215,12 +215,10 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
           jQuery("#rsvp-modal").show();
           jQuery("#modal").show();
           jQuery(".page").addClass("disable-scroll");
-            if (jQuery(window).width() > 425) {
-                jQuery("#rsvp-modal").prependTo("#page");
-        				jQuery("#rsvp-modal").addClass("modal");
-            }
+          jQuery("#rsvp-modal").prependTo("#page");
+          jQuery("#rsvp-modal").addClass("modal");
+
             if (jQuery(window).width() < 425) {
-                
                 jQuery("#rsvp-modal").offset({
                     top: top_pos
                 });
@@ -229,13 +227,12 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
         });
 
         jQuery("#rsvp-bottom").click(function () {
-            jQuery("#rsvp-modal").show();
+          jQuery("#rsvp-modal").show();
           jQuery("#modal").show();
+          jQuery("#rsvp-modal").prependTo("#page");
           jQuery(".page").addClass("disable-scroll");
-            if (jQuery(window).width() > 425) {
-                jQuery("#rsvp-modal").prependTo("#page");
-        				jQuery("#rsvp-modal").addClass("modal");
-            }
+					jQuery("#rsvp-modal").addClass("modal");
+
             if (jQuery(window).width() < 425) {
                 jQuery("#rsvp-modal").offset({
                     top: bottom_pos

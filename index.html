@@ -301,7 +301,7 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
     var header = jQuery(".navigation-top");
     jQuery(".banner-img").appendTo(".custom-header");
     jQuery("#modal").prependTo("#page");
-
+ 	
     jQuery(window).scroll(function () {
         var scroll = jQuery(window).scrollTop();
 
@@ -329,12 +329,10 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
           jQuery("#rsvp-modal").show();
           jQuery("#modal").show();
           jQuery(".page").addClass("disable-scroll");
-            if (jQuery(window).width() > 425) {
-                jQuery("#rsvp-modal").prependTo("#page");
-        				jQuery("#rsvp-modal").addClass("modal");
-            }
+          jQuery("#rsvp-modal").prependTo("#page");
+          jQuery("#rsvp-modal").addClass("modal");
+
             if (jQuery(window).width() < 425) {
-                
                 jQuery("#rsvp-modal").offset({
                     top: top_pos
                 });
@@ -343,13 +341,12 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
         });
 
         jQuery("#rsvp-bottom").click(function () {
-            jQuery("#rsvp-modal").show();
+          jQuery("#rsvp-modal").show();
           jQuery("#modal").show();
+          jQuery("#rsvp-modal").prependTo("#page");
           jQuery(".page").addClass("disable-scroll");
-            if (jQuery(window).width() > 425) {
-                jQuery("#rsvp-modal").prependTo("#page");
-        				jQuery("#rsvp-modal").addClass("modal");
-            }
+					jQuery("#rsvp-modal").addClass("modal");
+
             if (jQuery(window).width() < 425) {
                 jQuery("#rsvp-modal").offset({
                     top: bottom_pos
