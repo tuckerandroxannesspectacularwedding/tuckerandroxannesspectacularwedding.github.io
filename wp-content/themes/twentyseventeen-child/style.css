@@ -250,15 +250,23 @@ input#mc-embedded-subscribe:hover {
     button.menu-toggle:hover {
         color: white !important;
     }
-}
-
-@media screen and (max-width: 425px) {
-    article#panel4 {
-        padding: unset;
-    }
     .banner-img {
         left: 0;
-        margin-top: 100px;
+    }
+
+    .modal-wrapper > .right {
+        width: 100%;
+    }
+    .modal-wrapper > .left {
+        width: 100%;
+    }
+    .modal-wrapper {
+        max-width: 100%;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        overflow-y: scroll;
     }
 
     #rsvp-modal {
@@ -268,20 +276,17 @@ input#mc-embedded-subscribe:hover {
         top: 0 !important;
     }
 
+}
 
-    .modal-wrapper {
-        max-width: 100%;
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        border-radius: 0;
-        overflow-y: scroll;
+@media screen and (max-width: 425px) {
+    article#panel4 {
+        padding: unset;
     }
-    .modal-wrapper > .right {
-        width: 100%;
+
+    .banner-img {
+        margin-top: 100px;
     }
-    .modal-wrapper > .left {
-        width: 100%;
-    }
+
+
 
 }
