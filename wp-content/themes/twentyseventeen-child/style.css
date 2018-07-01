@@ -61,6 +61,7 @@ p#cursive {
 
 .rsvp-bg {
     background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/ring-header.jpg) !important;
+    background-color: #004702;
 }
 
 
@@ -101,6 +102,7 @@ article#panel4 {
     background-size: cover;
     color: whitesmoke;
     padding: 0px 150px;
+    background-color: #004702;
 }
 
 .custom-header-media:before {
@@ -281,12 +283,15 @@ input#mc-embedded-subscribe:hover {
         top: 0 !important;
     }
 
-}
-
-@media screen and (max-width: 425px) {
     article#panel4 {
         padding: unset;
     }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
 
     .banner-img {
         margin-top: 75px;
