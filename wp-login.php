@@ -9,7 +9,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Log In &lsaquo; tucker + roxanne &#8212; WordPress</title>
 	<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' href='https://tuckerandroxannesspectacularwedding.github.io/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5B%5D=dashicons,buttons,forms,l10n,login&amp;ver=4.9.6' type='text/css' media='all' />
+<link rel='stylesheet' href='https://tuckerandroxannesspectacularwedding.github.io/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5B%5D=dashicons,buttons,forms,l10n,login&amp;ver=4.9.8' type='text/css' media='all' />
 <meta name='robots' content='noindex,follow' />
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" href="https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/cropped-red-heart-painted-in-watercolor-32x32.png" sizes="32x32" />

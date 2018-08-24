@@ -263,6 +263,10 @@ input#mc-embedded-subscribe:hover {
     z-index: 100 !important;
 }
 
+a:hover {
+    color: black !important;
+}
+
 
 @media screen and (max-width: 767px) {
     .nav-before a {
