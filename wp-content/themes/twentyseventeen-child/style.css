@@ -61,7 +61,9 @@ p#cursive {
 
 .rsvp-bg {
     background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/ring-header.jpg) !important;
-    background-color: #004702;
+    background-color: #033321;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -100,9 +102,10 @@ textarea {
 article#panel4 {
     background-image: url("https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/IMG_4409.jpg");
     background-size: cover;
+    background-position: center;
     color: whitesmoke;
     padding: 0px 150px;
-    background-color: #004702;
+    background-color: #033321;
 }
 
 .custom-header-media:before {
@@ -112,7 +115,7 @@ article#panel4 {
 .navigation-top {
     background-color: rgba(0, 0, 0, 0) !important;
     border: 0 !important;
-    z-index: 10;
+    z-index: 100;
 }
 
 .nav-alt {
@@ -248,6 +251,17 @@ input#mc-embedded-subscribe:hover {
     display: none;
 }
 
+.page-id-237 .custom-header-media {
+    display: none;
+}
+
+.page-id-237 .site-branding {
+    display: none;
+}
+
+.navigation-top.nav-alt.site-navigation-fixed {
+    z-index: 100 !important;
+}
 
 
 @media screen and (max-width: 767px) {

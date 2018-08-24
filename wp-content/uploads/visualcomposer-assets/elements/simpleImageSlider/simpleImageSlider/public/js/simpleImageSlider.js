@@ -1,12 +1,12 @@
 (function ($) {
-  vcv.on('ready', function () {
-    var sliders = $('.vce-simple-image-slider-list');
+  window.vcv.on('ready', function () {
+    var sliders = $('.vce-simple-image-slider-list')
     if (sliders.length) {
       sliders.each(function () {
-        var slider = $(this);
-        var dots = slider.parent().find('.vce-simple-image-slider-dots');
-        var prevArrow = slider.find('.vce-simple-image-slider-prev-arrow') || '';
-        var nextArrow = slider.find('.vce-simple-image-slider-next-arrow') || '';
+        var slider = $(this)
+        var dots = slider.parent().find('.vce-simple-image-slider-dots')
+        var prevArrow = slider.find('.vce-simple-image-slider-prev-arrow') || ''
+        var nextArrow = slider.find('.vce-simple-image-slider-next-arrow') || ''
         var settings = {
           autoplay: slider[0].dataset.slickAutoplay === 'on',
           autoplaySpeed: slider[0].dataset.slickAutoplayDelay,
@@ -20,14 +20,14 @@
           respondTo: 'slider',
           swipe: slider[0].dataset.slickDisableSwipe !== 'on',
           swipeToSlide: slider[0].dataset.slickDisableSwipe !== 'on',
-          touchMove: slider[0].dataset.slickDisableSwipe !== 'on',
+          touchMove: slider[0].dataset.slickDisableSwipe !== 'on'
 
-        };
-        if (slider.hasClass('slick-initialized')) {
-          slider.vcSlick && slider.vcSlick('unslick');
         }
-        slider.vcSlick && slider.vcSlick(settings);
-      });
+        if (slider.hasClass('slick-initialized')) {
+          slider.vcSlick && slider.vcSlick('unslick')
+        }
+        slider.vcSlick && slider.vcSlick(settings)
+      })
     }
   })
 })(window.jQuery)
