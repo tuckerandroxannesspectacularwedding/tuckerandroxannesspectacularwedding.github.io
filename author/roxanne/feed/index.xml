@@ -9,10 +9,10 @@
 
 <channel>
 	<title>roxanne &#8211; tucker + roxanne</title>
-	<atom:link href="http://localhost/wedding-website/author/roxanne/feed/" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tuckerandroxannesspectacularwedding.github.io/author/roxanne/feed/" rel="self" type="application/rss+xml" />
 	<link>https://tuckerandroxannesspectacularwedding.github.io</link>
 	<description>11/4/2018</description>
-	<lastBuildDate>Fri, 24 Aug 2018 02:32:25 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 28 Aug 2018 05:28:41 +0000</lastBuildDate>
 	<language>en-CA</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -33,7 +33,7 @@
 		<dc:creator><![CDATA[roxanne]]></dc:creator>
 				<category><![CDATA[Uncategorised]]></category>
 
-		<guid isPermaLink="false">https://tuckerandroxannesspectacularwedding.github.io/?p=1</guid>
+		<guid isPermaLink="false">http://localhost:8888/wedding-website/?p=1</guid>
 		<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 				<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>

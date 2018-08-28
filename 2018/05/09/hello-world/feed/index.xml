@@ -7,7 +7,7 @@
 	>
 <channel>
 	<title>Comments on: Hello world!</title>
-	<atom:link href="http://localhost/wedding-website/2018/05/09/hello-world/feed/" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/feed/" rel="self" type="application/rss+xml" />
 	<link>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/</link>
 	<description>11/4/2018</description>
 	<lastBuildDate>Wed, 09 May 2018 19:53:45 +0000</lastBuildDate>
@@ -19,7 +19,7 @@
 		<link>https://tuckerandroxannesspectacularwedding.github.io/2018/05/09/hello-world/#comment-1</link>
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Wed, 09 May 2018 19:53:45 +0000</pubDate>
-		<guid isPermaLink="false">https://tuckerandroxannesspectacularwedding.github.io/?p=1#comment-1</guid>
+		<guid isPermaLink="false">http://localhost:8888/wedding-website/?p=1#comment-1</guid>
 		<description><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
 Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot;&gt;Gravatar&lt;/a&gt;.]]></description>
