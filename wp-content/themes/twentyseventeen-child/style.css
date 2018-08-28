@@ -60,7 +60,7 @@ p#cursive {
 }
 
 .rsvp-bg {
-    background-image: url(https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/ring-header.jpg) !important;
+    background-image: url(http://localhost:8888/wedding-website/wp-content/uploads/2018/06/ring-header.jpg) !important;
     background-color: #033321;
     background-position: center;
     background-size: cover;
@@ -100,7 +100,7 @@ textarea {
 }
 
 article#panel4 {
-    background-image: url("https://tuckerandroxannesspectacularwedding.github.io/wp-content/uploads/2018/06/IMG_4409.jpg");
+    background-image: url("http://localhost:8888/wedding-website/wp-content/uploads/2018/06/IMG_4409.jpg");
     background-size: cover;
     background-position: center;
     color: whitesmoke;
